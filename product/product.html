@@ -12,37 +12,46 @@
             background: #f2f2f2;
         }
 
+        nav {
+            background-color: #251992;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            /* font-size:larger; */
+        }
+        
         .gallery {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
-            margin: 50px 0;
+            align-items: stretch; 
+            margin: 20px;
         }
 
         .product {
-            width: 20%;
-            margin: 15px;
+            width: calc(25% - 40px); 
+            margin: 10px;
             box-sizing: border-box;
             text-align: center;
             border-radius: 10px;
-            cursor: pointer;
+            /* cursor: pointer; */
             padding-top: 10px;
             box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
                         0 10px 10px rgba(0, 0, 0, 0.22);
-            transition: .4s;
+            /* transition: .4s; */
             background: #f2f2f2;
         }
 
         .product:hover {
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
                         0 3px 6px rgba(0, 0, 0, 0.23);
-            transform: translate(0px, -8px);
+            /* transform: translate(0px, -8px); */
         }
 
         img {
-            width: 200px;
-            height: 200px;
+            width: 100%;
+            max-width: 200px; 
+            height: auto;
             margin: 0 auto;
             display: block;
         }
@@ -56,7 +65,7 @@
         }
 
         h6 {
-            font-size: 26px;
+            font-size: 18px;
             color: #222f3e;
         }
 
@@ -87,15 +96,30 @@
         .buy-button:hover {
             background-color: #2980b9;
         }
+
+        @media screen and (max-width: 768px) {
+            .product {
+                width: calc(50% - 20px); 
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .product {
+                width: calc(100% - 20px); 
+            }
+        }
     </style>
 </head>
 <body>
+    <nav>
+        <h1>Travel Gear catalog to buy</h1>
+    </nav>
     <div class="gallery">
-        <div class="product">
+        <div class="product" style="height: 510px;">
             <figure>
-                <img src="image.png" alt="Product Image">
+                <img src="image.png" alt="Product Image" style="height:200px;">
                 <figcaption>
-                    <h3>Product Title</h3>
+                    <h3>Travelling Bag</h3>
                     <p>Description of the product</p>
                     <h6>$100.00</h6>
                     <ul>
@@ -105,7 +129,7 @@
                         <li><i class="fa fa-star checked"></i></li>
                         <li><i class="fa fa-star"></i></li>
                     </ul>
-                    <button class="buy-button">Buy Now</button>
+                    <button class="buy-button">ADD TO CART</button>
                 </figcaption>
             </figure>
         </div>
@@ -114,7 +138,7 @@
             <figure>
                 <img src="image2.png" alt="Product Image">
                 <figcaption>
-                    <h3>Product Title</h3>
+                    <h3>Trolley Bag</h3>
                     <p>Description of the product</p>
                     <h6>$100.00</h6>
                     <ul>
@@ -124,16 +148,16 @@
                         <li><i class="fa fa-star checked"></i></li>
                         <li><i class="fa fa-star"></i></li>
                     </ul>
-                    <button class="buy-button">Buy Now</button>
+                    <button class="buy-button">ADD TO CART</button>
                 </figcaption>
             </figure>
         </div>
 
-        <div class="product">
+        <div class="product" sstyle="height: 510px;">
             <figure>
                 <img src="image3.png" alt="Product Image">
                 <figcaption>
-                    <h3>Product Title</h3>
+                    <h3>Trolley Bag</h3>
                     <p>Description of the product</p>
                     <h6>$100.00</h6>
                     <ul>
@@ -143,16 +167,16 @@
                         <li><i class="fa fa-star checked"></i></li>
                         <li><i class="fa fa-star"></i></li>
                     </ul>
-                    <button class="buy-button">Buy Now</button>
+                    <button class="buy-button">ADD TO CART</button>
                 </figcaption>
             </figure>
         </div>
 
-        <div class="product">
+        <div class="product" >
             <figure>
                 <img src="image4.png" alt="Product Image">
                 <figcaption>
-                    <h3>Product Title</h3>
+                    <h3>Trolley Bag</h3>
                     <p>Description of the product</p>
                     <h6>$100.00</h6>
                     <ul>
@@ -162,7 +186,7 @@
                         <li><i class="fa fa-star checked"></i></li>
                         <li><i class="fa fa-star"></i></li>
                     </ul>
-                    <button class="buy-button">Buy Now</button>
+                    <button class="buy-button">ADD TO CART</button>
                 </figcaption>
             </figure>
         </div>
@@ -174,7 +198,7 @@
             <figure>
                 <img src="image copy.png" alt="Product Image">
                 <figcaption>
-                    <h3>Product Title</h3>
+                    <h3>Water Bottle</h3>
                     <p>Description of the product</p>
                     <h6>$100.00</h6>
                     <ul>
@@ -184,7 +208,7 @@
                         <li><i class="fa fa-star checked"></i></li>
                         <li><i class="fa fa-star"></i></li>
                     </ul>
-                    <button class="buy-button">Buy Now</button>
+                    <button class="buy-button">ADD TO CART</button>
                 </figcaption>
             </figure>
         </div>
@@ -193,7 +217,7 @@
             <figure>
                 <img src="image copy 2.png" alt="Product Image">
                 <figcaption>
-                    <h3>Product Title</h3>
+                    <h3>Water Bottle</h3>
                     <p>Description of the product</p>
                     <h6>$100.00</h6>
                     <ul>
@@ -203,16 +227,16 @@
                         <li><i class="fa fa-star checked"></i></li>
                         <li><i class="fa fa-star"></i></li>
                     </ul>
-                    <button class="buy-button">Buy Now</button>
+                    <button class="buy-button">ADD TO CART</button>
                 </figcaption>
             </figure>
         </div>
 
         <div class="product">
             <figure>
-                <img src="image copy 3.png" alt="Product Image">
+                <img src="image copy 3.png" alt="Product Image" style="height:250px;">
                 <figcaption>
-                    <h3>Product Title</h3>
+                    <h3>Water Bottle</h3>
                     <p>Description of the product</p>
                     <h6>$100.00</h6>
                     <ul>
@@ -222,7 +246,7 @@
                         <li><i class="fa fa-star checked"></i></li>
                         <li><i class="fa fa-star"></i></li>
                     </ul>
-                    <button class="buy-button">Buy Now</button>
+                    <button class="buy-button">ADD TO CART</button>
                 </figcaption>
             </figure>
         </div>
@@ -231,7 +255,7 @@
             <figure>
                 <img src="image copy 4.png" alt="Product Image">
                 <figcaption>
-                    <h3>Product Title</h3>
+                    <h3>Water Bottle</h3>
                     <p>Description of the product</p>
                     <h6>$100.00</h6>
                     <ul>
@@ -241,7 +265,7 @@
                         <li><i class="fa fa-star checked"></i></li>
                         <li><i class="fa fa-star"></i></li>
                     </ul>
-                    <button class="buy-button">Buy Now</button>
+                    <button class="buy-button">ADD TO CART</button>
                 </figcaption>
             </figure>
         </div>
@@ -251,9 +275,9 @@
     <div class="gallery">
         <div class="product">
             <figure>
-                <img src="1.png" alt="Product Image">
+                <img src="1.png" alt="Product Image" style="height: 150px;">
                 <figcaption>
-                    <h3>Product Title</h3>
+                    <h3>Camp Xplore</h3>
                     <p>Description of the product</p>
                     <h6>$100.00</h6>
                     <ul>
@@ -263,7 +287,7 @@
                         <li><i class="fa fa-star checked"></i></li>
                         <li><i class="fa fa-star"></i></li>
                     </ul>
-                    <button class="buy-button">Buy Now</button>
+                    <button class="buy-button">ADD TO CART</button>
                 </figcaption>
             </figure>
         </div>
@@ -272,7 +296,7 @@
             <figure>
                 <img src="2.png" alt="Product Image">
                 <figcaption>
-                    <h3>Product Title</h3>
+                    <h3>Camp</h3>
                     <p>Description of the product</p>
                     <h6>$100.00</h6>
                     <ul>
@@ -282,16 +306,16 @@
                         <li><i class="fa fa-star checked"></i></li>
                         <li><i class="fa fa-star"></i></li>
                     </ul>
-                    <button class="buy-button">Buy Now</button>
+                    <button class="buy-button">ADD TO CART</button>
                 </figcaption>
             </figure>
         </div>
 
         <div class="product">
             <figure>
-                <img src="3.png" alt="Product Image">
+                <img src="3.png" alt="Product Image" style="height: 130px;">
                 <figcaption>
-                    <h3>Product Title</h3>
+                    <h3>Tent</h3>
                     <p>Description of the product</p>
                     <h6>$100.00</h6>
                     <ul>
@@ -301,16 +325,16 @@
                         <li><i class="fa fa-star checked"></i></li>
                         <li><i class="fa fa-star"></i></li>
                     </ul>
-                    <button class="buy-button">Buy Now</button>
+                    <button class="buy-button">ADD TO CART</button>
                 </figcaption>
             </figure>
         </div>
 
         <div class="product">
             <figure>
-                <img src="4.png" alt="Product Image">
+                <img src="4.png" alt="Product Image" style="height: 130px;">
                 <figcaption>
-                    <h3>Product Title</h3>
+                    <h3>Tent</h3>
                     <p>Description of the product</p>
                     <h6>$100.00</h6>
                     <ul>
@@ -320,7 +344,7 @@
                         <li><i class="fa fa-star checked"></i></li>
                         <li><i class="fa fa-star"></i></li>
                     </ul>
-                    <button class="buy-button">Buy Now</button>
+                    <button class="buy-button">ADD TO CART</button>
                 </figcaption>
             </figure>
         </div>
@@ -330,9 +354,9 @@
     <div class="gallery">
         <div class="product">
             <figure>
-                <img src="food.png" alt="Product Image">
+                <img src="food.png" alt="Product Image" style="height:300px;">
                 <figcaption>
-                    <h3>Product Title</h3>
+                    <h3>Snacks</h3>
                     <p>Description of the product</p>
                     <h6>$100.00</h6>
                     <ul>
@@ -342,7 +366,7 @@
                         <li><i class="fa fa-star checked"></i></li>
                         <li><i class="fa fa-star"></i></li>
                     </ul>
-                    <button class="buy-button">Buy Now</button>
+                    <button class="buy-button">ADD TO CART</button>
                 </figcaption>
             </figure>
         </div>
@@ -351,7 +375,7 @@
             <figure>
                 <img src="food1.png" alt="Product Image">
                 <figcaption>
-                    <h3>Product Title</h3>
+                    <h3>Healthy Breakfast</h3>
                     <p>Description of the product</p>
                     <h6>$100.00</h6>
                     <ul>
@@ -361,7 +385,7 @@
                         <li><i class="fa fa-star checked"></i></li>
                         <li><i class="fa fa-star"></i></li>
                     </ul>
-                    <button class="buy-button">Buy Now</button>
+                    <button class="buy-button">ADD TO CART</button>
                 </figcaption>
             </figure>
         </div>
@@ -370,7 +394,7 @@
             <figure>
                 <img src="food2.png" alt="Product Image">
                 <figcaption>
-                    <h3>Product Title</h3>
+                    <h3>Mid Time snacks</h3>
                     <p>Description of the product</p>
                     <h6>$100.00</h6>
                     <ul>
@@ -380,16 +404,16 @@
                         <li><i class="fa fa-star checked"></i></li>
                         <li><i class="fa fa-star"></i></li>
                     </ul>
-                    <button class="buy-button">Buy Now</button>
+                    <button class="buy-button">ADD TO CART</button>
                 </figcaption>
             </figure>
         </div>
 
         <div class="product">
             <figure>
-                <img src="food3.png" alt="Product Image">
+                <img src="snack.png" alt="Product Image" style="height:300px;">
                 <figcaption>
-                    <h3>Product Title</h3>
+                    <h3>Healthy Snacks</h3>
                     <p>Description of the product</p>
                     <h6>$100.00</h6>
                     <ul>
@@ -399,7 +423,7 @@
                         <li><i class="fa fa-star checked"></i></li>
                         <li><i class="fa fa-star"></i></li>
                     </ul>
-                    <button class="buy-button">Buy Now</button>
+                    <button class="buy-button">ADD TO CART</button>
                 </figcaption>
             </figure>
         </div>
@@ -411,7 +435,7 @@
             <figure>
                 <img src="camera.png" alt="Product Image">
                 <figcaption>
-                    <h3>Product Title</h3>
+                    <h3>Traveling camera</h3>
                     <p>Description of the product</p>
                     <h6>$100.00</h6>
                     <ul>
@@ -421,7 +445,7 @@
                         <li><i class="fa fa-star checked"></i></li>
                         <li><i class="fa fa-star"></i></li>
                     </ul>
-                    <button class="buy-button">Buy Now</button>
+                    <button class="buy-button">ADD TO CART</button>
                 </figcaption>
             </figure>
         </div>
@@ -430,7 +454,7 @@
             <figure>
                 <img src="camera1.png" alt="Product Image">
                 <figcaption>
-                    <h3>Product Title</h3>
+                    <h3>Traveling camera</h3>
                     <p>Description of the product</p>
                     <h6>$100.00</h6>
                     <ul>
@@ -440,7 +464,7 @@
                         <li><i class="fa fa-star checked"></i></li>
                         <li><i class="fa fa-star"></i></li>
                     </ul>
-                    <button class="buy-button">Buy Now</button>
+                    <button class="buy-button">ADD TO CART</button>
                 </figcaption>
             </figure>
         </div>
@@ -449,7 +473,7 @@
             <figure>
                 <img src="camera2.png" alt="Product Image">
                 <figcaption>
-                    <h3>Product Title</h3>
+                    <h3>Traveling camera</h3>
                     <p>Description of the product</p>
                     <h6>$100.00</h6>
                     <ul>
@@ -459,7 +483,7 @@
                         <li><i class="fa fa-star checked"></i></li>
                         <li><i class="fa fa-star"></i></li>
                     </ul>
-                    <button class="buy-button">Buy Now</button>
+                    <button class="buy-button">ADD TO CART</button>
                 </figcaption>
             </figure>
         </div>
@@ -468,7 +492,7 @@
             <figure>
                 <img src="camera3.png" alt="Product Image">
                 <figcaption>
-                    <h3>Product Title</h3>
+                    <h3>Traveling camera</h3>
                     <p>Description of the product</p>
                     <h6>$100.00</h6>
                     <ul>
@@ -478,7 +502,7 @@
                         <li><i class="fa fa-star checked"></i></li>
                         <li><i class="fa fa-star"></i></li>
                     </ul>
-                    <button class="buy-button">Buy Now</button>
+                    <button class="buy-button">ADD TO CART</button>
                 </figcaption>
             </figure>
         </div>
@@ -488,9 +512,9 @@
     <div class="gallery">
         <div class="product">
             <figure>
-                <img src="image.png" alt="Product Image">
+                <img src="shoe.png" alt="Product Image">
                 <figcaption>
-                    <h3>Product Title</h3>
+                    <h3>Shoes</h3>
                     <p>Description of the product</p>
                     <h6>$100.00</h6>
                     <ul>
@@ -500,16 +524,16 @@
                         <li><i class="fa fa-star checked"></i></li>
                         <li><i class="fa fa-star"></i></li>
                     </ul>
-                    <button class="buy-button">Buy Now</button>
+                    <button class="buy-button">ADD TO CART</button>
                 </figcaption>
             </figure>
         </div>
 
         <div class="product">
             <figure>
-                <img src="image2.png" alt="Product Image">
+                <img src="shoe1.png" alt="Product Image">
                 <figcaption>
-                    <h3>Product Title</h3>
+                    <h3>Casuals</h3>
                     <p>Description of the product</p>
                     <h6>$100.00</h6>
                     <ul>
@@ -519,16 +543,16 @@
                         <li><i class="fa fa-star checked"></i></li>
                         <li><i class="fa fa-star"></i></li>
                     </ul>
-                    <button class="buy-button">Buy Now</button>
+                    <button class="buy-button">ADD TO CART</button>
                 </figcaption>
             </figure>
         </div>
 
         <div class="product">
             <figure>
-                <img src="image3.png" alt="Product Image">
+                <img src="shoe2.png" alt="Product Image">
                 <figcaption>
-                    <h3>Product Title</h3>
+                    <h3>Traveling Shoes</h3>
                     <p>Description of the product</p>
                     <h6>$100.00</h6>
                     <ul>
@@ -538,16 +562,16 @@
                         <li><i class="fa fa-star checked"></i></li>
                         <li><i class="fa fa-star"></i></li>
                     </ul>
-                    <button class="buy-button">Buy Now</button>
+                    <button class="buy-button">ADD TO CART</button>
                 </figcaption>
             </figure>
         </div>
 
         <div class="product">
             <figure>
-                <img src="image4.png" alt="Product Image">
+                <img src="shoe3.png" alt="Product Image">
                 <figcaption>
-                    <h3>Product Title</h3>
+                    <h3>Traveling Shoes</h3>
                     <p>Description of the product</p>
                     <h6>$100.00</h6>
                     <ul>
@@ -557,11 +581,91 @@
                         <li><i class="fa fa-star checked"></i></li>
                         <li><i class="fa fa-star"></i></li>
                     </ul>
-                    <button class="buy-button">Buy Now</button>
+                    <button class="buy-button">ADD TO CART</button>
                 </figcaption>
             </figure>
         </div>
+
+        <div class="product" >
+            <figure>
+                <img src="kit1.png" alt="Product Image" style="height:200px;">
+                <figcaption>
+                    <h3>First Aid kit</h3>
+                    <p>Description of the product</p>
+                    <h6>$100.00</h6>
+                    <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <button class="buy-button">ADD TO CART</button>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="product">
+            <figure>
+                <img src="kit2.png" alt="Product Image" style="height: 200px;">
+                <figcaption>
+                    <h3>First Aid Kit</h3>
+                    <p>Description of the product</p>
+                    <h6>$100.00</h6>
+                    <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <button class="buy-button">ADD TO CART</button>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="product" sstyle="height: 510px;">
+            <figure>
+                <img src="kit3.png" alt="Product Image" style="height: 200px;">
+                <figcaption>
+                    <h3>First Aid Kit</h3>
+                    <p>Description of the product</p>
+                    <h6>$100.00</h6>
+                    <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <button class="buy-button">ADD TO CART</button>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="product" >
+            <figure>
+                <img src="kit4.png" alt="Product Image" style="height: 200px;">
+                <figcaption>
+                    <h3>First Aid Kit</h3>
+                    <p>Description of the product</p>
+                    <h6>$100.00</h6>
+                    <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <button class="buy-button">ADD TO CART</button>
+                </figcaption>
+            </figure>
+        </div>
+
+    </div>
+
         
     </div>
 </body>
 </html>
+
