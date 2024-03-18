@@ -1,0 +1,94 @@
+body{
+  background-image: url(tour.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .container{
+    width:1000px;
+    margin:auto;
+    transition:0.5s;
+  }
+
+  header{
+    display:grid;
+    grid-template-columns: 1fr 50px;
+    margin-top: 50px;
+  }
+  header .shopping{
+    position: relative;
+  }
+  header .shopping img{
+    width: 80px;
+  }
+  header .shopping span{
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    position: absolute;
+    top: 5px;
+    left: 130%;
+    padding: 5px 15px;
+  }
+  h1{
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    color: rgb(212, 215, 220);
+    font-size: 50px;
+  }
+  #cart-details{
+    opacity: 0.9;
+    height: 1000px;
+    width: 80%;
+    background-color: rgba(4, 48, 136, 0.104);
+    position: absolute;
+    left: 10%;
+    top:20%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .select{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  button{
+    height: 70px;
+    width:10%;
+    font-size: 50px;
+    color: rgb(0, 5, 52);
+    opacity: 1.5;
+    cursor: pointer;
+    margin-top: 45%;
+    background-color:rgba(1, 44, 67, 0.288);
+    border-radius: 10px solid white;
+  
+    
+  
+  }
+  span{
+    transition: transform 0.3s ease;
+    position: relative;
+    top:55%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+ #payment{
+  height: 500px;
+  width: 400px;
+  background-color: antiquewhite;
+  display: none;
+ }
+ .payment-button:hover {
+  background-color: #45a049;
+}
