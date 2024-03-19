@@ -64,7 +64,10 @@ h1{
     font-weight: 600;
     font-family: Segoe Script;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> a11443bbd06b1973f69fa5cba7b5936fc28d4284
 /* ///////////////////// Media Query*/
 
 @media (min-width:1024px){
@@ -80,6 +83,43 @@ h1{
 }
 
 @media (min-width:768px) and (max-width:1023px){
+<<<<<<< HEAD
 
 
+=======
+   
+    .search-box{
+        width: 70%;
+        margin-left: 90px;
+        height: 50px;
+    }
+    .search-box form{
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    input::placeholder{
+        font-size: 10px;
+    }
+
+    .search-box form input{
+        border: 0;
+        outline: none;
+        background: transparent;
+        font-size: 10px;
+        flex: 1;
+    }
+    .search-box form button{
+        background: #ff5361;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+    }
+>>>>>>> a11443bbd06b1973f69fa5cba7b5936fc28d4284
 }
