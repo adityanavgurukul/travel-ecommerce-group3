@@ -64,3 +64,22 @@ h1{
     font-weight: 600;
     font-family: Segoe Script;
 }
+
+/* ///////////////////// Media Query*/
+
+@media (min-width:1024px){
+  
+    h1{
+        margin-left: 50px;
+    }
+
+    .search-box{
+        width: 70%;
+        margin-left: 125px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px){
+
+
+}
