@@ -26,7 +26,6 @@ function addItem (e) {
         removeBtn.setAttribute("id", "remove" + productId);
         removeBtn.setAttribute("type", "button");
         removeBtn.setAttribute("value", "Remove");
-        // removeBtn.setAttribute("class", "removebut");
         removeBtn.onclick = () => removeItem(productId);
         wishDiv.appendChild(removeBtn);
 
