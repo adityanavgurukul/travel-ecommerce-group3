@@ -61,10 +61,6 @@ header{
     display: flex;
     gap: 5vh;
 }
-#about{
-    height: 92.5vh;
-    width: 100%;
-}
 
 .Contact{
     display: flex;
@@ -89,9 +85,11 @@ header{
     margin: 5vh;
 }
 .button button{
-    background-color: rgb(233, 142, 30);
-    height: 5vh;
-    border-radius: .5rem;
+    height: 6.9vh;
+    width: 100%;
+    background-color: greenyellow;
+    color: aliceblue;
+    border-radius: 2rem;
 }
 #footer-container{
     display: flex;
@@ -199,27 +197,6 @@ width: 100%;
     height: 30vh;
     width: 100%;
 }
-#about{
-    height: 130vh;
-    width: 100%;
-    background-color: rgb(196, 165, 125);
-}
-.About img{
-    height: 70vh;
-    width: 100%;
-}
-.sabout{
-    background-color: aquamarine;
-    text-align: center;
-}
-.train{
-    text-align: center;
-}
-#navbar:hover {
-    transform: rotateX(-360deg);
-    transform: rotateY(-360deg);
-    transition: all 0.8s ease-in-out 0s;
-}
 .go-to-home{
 
     width: 8.7rem;
@@ -237,7 +214,14 @@ width: 100%;
 hr{
     border: 1px dotted rgb(224, 177, 177);
 }
-
+.arr{
+    position: relative;
+    bottom: 4rem;
+}
+#web{
+    position: relative;
+    bottom: 3.5rem;
+}
 
 
 
