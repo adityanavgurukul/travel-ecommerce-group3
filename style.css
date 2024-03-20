@@ -234,7 +234,9 @@ width: 100%;
     top: 25vh;
     right: 65vh;
 }
-
+hr{
+    border: 1px dotted rgb(238, 222, 222);
+}
 
 
 
