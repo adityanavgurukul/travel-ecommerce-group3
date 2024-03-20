@@ -64,10 +64,6 @@ h1{
     font-weight: 600;
     font-family: Segoe Script;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> a11443bbd06b1973f69fa5cba7b5936fc28d4284
 /* ///////////////////// Media Query*/
 
 @media (min-width:1024px){
@@ -83,10 +79,6 @@ h1{
 }
 
 @media (min-width:768px) and (max-width:1023px){
-<<<<<<< HEAD
-
-
-=======
    
     .search-box{
         width: 70%;
@@ -121,5 +113,4 @@ h1{
         outline: none;
         cursor: pointer;
     }
->>>>>>> a11443bbd06b1973f69fa5cba7b5936fc28d4284
 }
