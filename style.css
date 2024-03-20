@@ -195,11 +195,11 @@ li a{
 height: 85vh;
 width: 100%;
 }
-#Home:hover img{
+/* #Home:hover img{
     transform: rotateX(-360deg);
     transform: rotateY(-360deg);
     transition: all 0.5s ease-in-out 0s;
-}
+} */
 .home-image{
     height: 85vh;
     width: 100%;
@@ -221,7 +221,7 @@ width: 100%;
 .discover-img1 img{
     height: 30vh;
     width: 100%;
-    transform: rotateY(0);
+    /* transform: rotateY(0); */
 }
 /* .discover-img1:hover img{
     transform: rotateY(-90deg);
@@ -251,16 +251,16 @@ width: 100%;
     width: 100%;
     background-color: rgb(196, 165, 125);
 }
-.About{
+/* .About{
     perspective: 1000px;
-}
-.About:hover img{
+} */
+/* .About:hover img{
     transform: rotateX(-360deg);
-    ransform: rotateY(-360deg);
-    transition: all 0.5s ease-in-out 0s;
+    transform: rotateY(-360deg);
+    transition: all 0.5s ease-in-out 0s; */
     /* border: 5px solid red; */
-    text-align: center;
-}
+    /* text-align: center; */
+/* } */
 .About img{
     height: 70vh;
     width: 100%;
@@ -279,11 +279,11 @@ width: 100%;
     transition: all 0.8s ease-in-out 0s;
     /* transition: all 0.8s ease-in-out 0s;  */
 }
-#footer-container:hover ul{
+/* #footer-container:hover ul{
     transform: rotateX(-360deg);
     transform: rotateY(-360deg);
     transition: all 0.5s ease-in-out 0s;
-}
+} */
 .go-to-home{
     /* border: 2px solid #f17373 ; */
     width: 8.7rem;
@@ -357,4 +357,69 @@ width: 100%;
         margin: 1.5rem 0;
         background: #222;
     }
+}
+@media(max-width:280px){
+    #footer{
+        height: 50rem;
+        width: 100%;
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+    }
+    #us{
+        display: flex;
+        height: 20vh;
+        width: 100%;
+        text-decoration: none;
+        text-wrap: wrap;
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+    }
+    #tips{
+        display: flex;
+        height: 20vh;
+        width: 100%;
+        text-decoration: none;
+        text-wrap: wrap;
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+    }
+    #trips{
+        display: flex;
+        height: 20vh;
+        width: 100%;
+        text-decoration: none;
+        text-wrap: wrap;
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+    }
+    #web{
+        display: flex;
+        height: 20vh;
+        width: 100%;
+        text-decoration: none;
+        text-wrap: wrap;
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+    }
+
 }
