@@ -214,6 +214,9 @@ hr{
     bottom: 3.5rem;
 }
 
+
+
+
 @media (max-width:280px){
     #menu{
         display: initial;
