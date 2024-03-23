@@ -9,7 +9,6 @@
 //     navbar.classList.toggle("active")
 // }));
 
-
 // const id = document.querySelector("#discover");
 // const m = document.querySelector(".spa");
 // let flag=true
