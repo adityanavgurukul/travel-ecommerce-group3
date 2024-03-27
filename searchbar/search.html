@@ -1,114 +1,58 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel E-Commerce</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="search.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Searching-Page</title>
+	<link rel="stylesheet" type="text/css" href="search.css" />
 </head>
+
 <body>
-    <div class="container">
-        <h1>Find Your Next stay</div>
-            <div class="search-box">
-                    <input type="text" placeholder="Location" class="input" id="locationInput">
-                    <button id="searchbutton">search</button>
+    <nav>
+        <div class="main_nav">
+
+            <div class="srch-btn">
+                <input class="search-input" type="search" name="" placeholder="Search here..."  id="searchBar" >
+                <div class="search-bar-icon">
+                    <img src="https://i.ibb.co/84PnKrF/search.png" alt="" class="nav-img">
+                </div>
             </div>
+
+
+        </div>
+    </nav>
+
+    <div class="cart-part"> 
     </div>
-    <!-- section 1----------------------------------------------------------------- -->
-   <section class="place">
-       <div class="visit">
-           <img src="image\delhi.jpg" alt="img">
-           <label>India Gate</label>
-           <br>
-           <span class="location">Delhi,India</span>  
-       </div>
+	<div class="Searching-container">
+		<div class="sidebar">
+			<div class="categories">
+                <button class="category">Search For place</button>
+				<button class="category" data-type="Shirt">Bihar</button>
+				<button class="category" data-type="Lower">Pune</button>
+                <button class="category" data-type="Saree's">Delhi</button>
+                <button class="category" data-type="boyscloth">Banglore</button>
+                <button class="category" data-type="boyscloth">Uttar pradeh</button>
+                <button class="category" data-type="boyscloth">Madhya pradesh</button>
+			</div>
+		</div>
+	
+		<div class="data">
+			<div class="top">
+				<p id="searchQueryDisplay"></p>
+				<p></p>
+			</div>
+			<div class="header">
+				<p>Travel place</p>
+			</div>
+			<div class="body">
+				<div id="root"></div>
+			</div>
+		</div>
 
-       <div class="visit">
-        <img src="image\bihar2.jpg" alt="img">
-        <label>Bodh Gaya</label>
-        <br>
-        <span class="location">Bihar,India</span>  
-       </div>
-
-       <div class="visit">
-        <img src="image/pune.jpg" alt="img">
-        <label>Aga Khan Palace</label>
-        <br>
-        <span class="location">Pune,India</span>  
-       </div>
-   </section>
-<!-- section 2------------------------------------------------------------------- -->
-    <section class="place">
-    <div class="visit">
-        <img src="image\pune2.jpg" alt="img">
-        <label>SwamiNarayana-Temple</label>
-        <br>
-        <span class="location">Pune,India</span>  
-    </div>
-
-    <div class="visit">
-       <img src="image\bihar.jpg" alt="img">
-       <label>Rajgir Glass Bridge</label>
-       <br>
-       <span class="location">Bihar,India</span>  
-    </div>
-
-    <div class="visit">
-        <img src="image\delhi2.jpg" alt="img">
-        <label>Bahai (Lotus) Temple</label>
-        <br>
-        <span class="location">Delhi,India</span>  
-     </div>
-</section>
-<!-- 3 ----------------------------------------------------------------------------------->
- <section class="place">
-    <div class="visit">
-        <img src="image\mp.jpg" alt="img">
-        <label>Bhedaghat</label>
-        <br>
-        <span class="location">Madhya Pradesh,India</span>  
-    </div>
-
-    <div class="visit">
-       <img src="image\banglore.png" alt="img">
-       <label>Cubbon Park</label>
-       <br>
-       <span class="location">Banglore,India</span>  
-    </div>
-
-    <div class="visit">
-     <img src="image\mp2.jpg" alt="img">
-     <label>Pachmarhi</label>
-     <br>
-     <span class="location">Madhya Pradesh,India</span>  
-    </div>
-</section> 
-
-<!-- section 4------------------------------------------------------------- -->
-
- <section class="place">
-    <div class="visit">
-        <img src="image\up.avif" alt="img">
-        <label>TajMahal,Agra</label>
-        <br>
-        <span class="location">Uttar Pradesh,India</span>  
-    </div>
-
-    <div class="visit">
-       <img src="image\up2.avif" alt="img">
-       <label>Varanasi</label>
-       <br>
-       <span class="location">Uttar Pradesh,India</span>  
-    </div>
-
-    <div class="visit">
-     <img src="image\banglore2.png" alt="img">
-     <label>Bangalore Palace</label>
-     <br>
-     <span class="location">Banglore,India</span>  
-    </div> 
- </section>
-<script src="search.js"></script>
+	</div>
+	<script src="search.js"></script>
 </body>
 </html>
