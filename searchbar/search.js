@@ -57,12 +57,46 @@
 //     }
 // }
 
+const inputbox = document.getElementById('locationInput');
+const searchButton = document.getElementById('searchbutton');
 
-const search = () =>{
-    let filter = document.getElementById('locationInput').value.toUpperCase();
-    let ul = document.getElementById('myUl');
+searchButton.addEventListener('click',function(){
+    const locationInput = inputbox.value.toUpperCase();
+    const visits = document.querySelectorAll('.visit');
 
-    let li = ul.getElementsByClassName('li');
+    const result = document.getElementById('searchresult');
+    result.innerHTML = '';
+
+    const matchlocation = [];
+
+    visits.forEach(function(visit){
+        const location = visit.querySelector('.location').textContent.toLowerCase();
+        const imgSrc = visit.querySelector('img').src;
+
+        if(location.includes(locationInput)){
+            const locationDiv = document.createElement('div');
+            locationDiv.classList.add('location-item');
 
 
-}
+            const locationName = document.createElement('h2');
+            locationName.textContent = visit.querySelector('label');
+
+            const locationImage = document.createElement('img');
+            locationImage.src = imgSrc;
+
+            locationDiv.appendChild(locationName);
+            locationDiv.appendChild(locationImage);
+
+            result.appendChild(locationDiv);
+
+            matchlocation.push(location);
+        }
+    });
+
+      if(matchlocation.length === 0){
+        alert('No locations found matching your search.');
+      }
+ 
+});
+
+
