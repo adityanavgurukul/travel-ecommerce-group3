@@ -1,94 +1,111 @@
-body{
-  background-image: url(tour.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+  display: flex;
+  justify-content: flex-end; 
+}
 
-  .container{
-    width:1000px;
-    margin:auto;
-    transition:0.5s;
-  }
+.cartTab {
+  position: fixed;
+  top: 0;
+  right: -500px; 
+  height: 100vh; 
+  width: 500px; 
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  z-index: 999;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+ 
+}
 
-  header{
-    display:grid;
-    grid-template-columns: 1fr 50px;
-    margin-top: 50px;
-  }
-  header .shopping{
-    position: relative;
-  }
-  header .shopping img{
-    width: 80px;
-  }
-  header .shopping span{
-    background-color: rgb(255, 0, 0);
-    border-radius: 50%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    color:#fff;
-    position: absolute;
-    top: 5px;
-    left: 130%;
-    padding: 5px 15px;
-  }
-  h1{
-    text-align: center;
-    position: relative;
-    bottom: 20px;
-    color: rgb(212, 215, 220);
-    font-size: 50px;
-  }
-  #cart-details{
-    opacity: 0.9;
-    height: 1000px;
-    width: 80%;
-    background-color: rgba(4, 48, 136, 0.104);
-    position: absolute;
-    left: 10%;
-    top:20%;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    font-size: 50px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .select{
-    display: flex;
-    justify-content: space-between;
+.showcart .cartTab {
+  right: 0; 
+}
 
-  }
-  button{
-    height: 70px;
-    width:10%;
-    font-size: 50px;
-    color: rgb(0, 5, 52);
-    opacity: 1.5;
-    cursor: pointer;
-    margin-top: 45%;
-    background-color:rgba(1, 44, 67, 0.288);
-    border-radius: 10px solid white;
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between; 
+  flex-grow: 1; 
+}
+
+.image {
+  flex: 0 0 100px;
+  margin-right: 20px;
+  overflow: hidden; 
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.name {
+  flex: 1;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.totalPrice {
+  flex: 0 0 100px;
+}
+
+.quantity {
+  flex: 0 0 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.quantity span {
+  cursor: pointer;
+}
+
+.btn {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 5px 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: larger;
   
-    
-  
-  }
-  span{
-    transition: transform 0.3s ease;
-    position: relative;
-    top:55%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
- #payment{
-  height: 500px;
-  width: 400px;
-  background-color: antiquewhite;
-  display: none;
- }
- .payment-button:hover {
-  background-color: #45a049;
+}
+
+button.close {
+  background-color: #ccc;
+  height:40px;
+  width:170px;
+}
+
+button.checkOut {
+  background-color: #007bff;
+  color: #fff;
+  height:40px;
+  width:170px;
+}
+.ListCart{
+  margin-bottom: 55%;
+  padding-bottom: 10%;
 }
