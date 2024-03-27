@@ -1,0 +1,101 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color:rgb(250, 247, 238);
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.container {
+	background-color: rgb(179, 220, 235);
+	padding: 30px;
+	border-radius: 20px;
+    text-align: center;
+	width: 450px;
+	}
+
+h1 {
+	font-size: 30px;
+	margin: 0;
+    color: rgb(43, 42, 41);
+    text-decoration: underline;
+}
+
+.rating {
+	font-size: 15px;
+	margin: 10px 0;
+}
+
+.stars {
+	font-size: 30px;
+	margin: 10px 0;
+}
+
+.star {
+	cursor: pointer;
+	margin: 0 5px;
+}
+
+.one {
+	color: rgb(239, 116, 110);
+}
+
+.two {
+	color: rgb(254, 59, 20);
+}
+
+.three {
+	color: rgb(143, 172, 42);
+}
+
+.four {
+	color: rgb(42, 228, 39);
+}
+
+.five {
+	color: rgb(4, 244, 4);
+}
+
+textarea {
+	width: 90%;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+
+}
+
+button {
+	background-color: rgb(194, 181, 146);
+	color: rgb(8, 8, 11);
+	padding: 10px 20px;
+	border: solid;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: rgb(197, 236, 124);
+}
+
+.reviews {
+	margin-top: 20px;
+	text-align: left;
+}
+
+.review {
+	border: 1px solid #e7ea14;
+	border-radius: 4px;
+	padding: 10px;
+	margin: 10px 0;
+}
+
+.review p {
+	margin: 0;
+    
+}
+p{
+    color: rgb(19, 19, 15);
+	font-style: oblique;
+}
