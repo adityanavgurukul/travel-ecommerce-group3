@@ -1,7 +1,6 @@
 const stars = document.querySelectorAll(".stars i ");
 console.log(stars);
 
-// using loop
  stars.forEach((star , index1) => {
     star.addEventListener("click",() =>{
 
