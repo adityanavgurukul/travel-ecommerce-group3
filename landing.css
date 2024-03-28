@@ -14,7 +14,6 @@ body{
     background-color: rgb(182, 102, 91);
 }
 html{
-    /* overflow: hidden; */
     scroll-padding-top:6rem ;
     scroll-behavior: smooth;
 }
@@ -27,10 +26,11 @@ header{
     justify-content: space-between;
     padding: 2rem 9%;
     width: 100%;
+    height: 4rem;
 }
 .plane{
-    height: 5rem;
-    width: 5rem;
+    height: 3rem;
+    width: 3rem;
     border-radius: 50%;
 }
 #menu i{
@@ -54,6 +54,9 @@ header{
     font-size: 1.2rem;
     margin: 0 .8rem;
     cursor: pointer;
+    font-size: 0.8678234567rem;
+    position: relative;
+    bottom: 0.6rem;
 }
 .fa{
     color: antiquewhite;
@@ -62,51 +65,12 @@ header{
     display: flex;
     gap: 5vh;
 }
-/* #searchbar-caintenor{
-    width: 100%;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
-    padding: 1.5rem 2rem;
-    background: #333;
-    border-top: 1rem solid #333;
-    display: flex;
-    align-items: center;
-    z-index: 1001;
-} */
-/* #searchbar{
-    width: 100%;
-    height: 4vh;
-    border-radius: 5rem;
-    text-transform: none;
-    color: #333;
-} */
-/* label{
-    color:white;
-    cursor: pointer;
-    margin-left: 1.2rem;
-} */
-/* #view{
-    height: 91.4vh;
-    width: 100%;
-    /* border: 10px solid red; */
-    /* background-image: url(); */
-/* } */
-/*#view img{
-    height: 90vh;
-    width: 100%;
-} */
-#about{
-    height: 92.5vh;
-    width: 100%;
-}
 
 .Contact{
     display: flex;
     height: 20vh;
     width: 100%;
-    background-color: rgb(84, 84, 126);
+    background-color: rgb(178, 178, 182);
     align-items: center;
     justify-content: center;
 }
@@ -119,19 +83,24 @@ header{
     font-style: var(#333);
 }
 .input input{
+    background-color: rgb(231, 225, 225);
     height: 5vh;
     width: 20vw;
     border-radius: .5rem;
     margin: 5vh;
 }
 .button button{
-    background-color: rgb(233, 142, 30);
-    height: 5vh;
-    border-radius: .5rem;
+    height: 7.8vh;
+    width: 100%;
+    background-color: rgb(182, 230, 106);
+    color: aliceblue;
+    border-radius: 2rem;
+    padding: .4rem;
 }
+
 #footer-container{
     display: flex;
-    background-color: rgb(165, 165, 243);
+    background-color: rgb(187, 187, 192);
     height: 60vh;
     width: 100%;
     flex-wrap: wrap;
@@ -141,7 +110,6 @@ header{
 }
 #footer-container div{
     position: relative;
-    /* border: 2px solid red; */
     
 }
 ul{
@@ -165,7 +133,6 @@ li a{
     color: rgb(201, 125, 125);
     font-size: 3.2rem;
     text-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
-    /* border: 2px solid red; */
     position: relative;
     bottom: 50vh;
     width: 100%;
@@ -185,20 +152,9 @@ li a{
     border-radius: .5rem;
     
 }
-.contant{
-    height: 40vh;
-    width: 50%;
-    border: 10px solid red;
-    z-index: -1;
-}
 #Home{
-height: 85vh;
+height: 85.0vh;
 width: 100%;
-}
-#Home:hover img{
-    transform: rotateX(-360deg);
-    transform: rotateY(-360deg);
-    transition: all 0.5s ease-in-out 0s;
 }
 .home-image{
     height: 85vh;
@@ -221,11 +177,7 @@ width: 100%;
 .discover-img1 img{
     height: 30vh;
     width: 100%;
-    transform: rotateY(0);
 }
-/* .discover-img1:hover img{
-    transform: rotateY(-90deg);
-} */
 .discover-img2 img{
     height: 30vh;
     width: 100%;
@@ -246,91 +198,22 @@ width: 100%;
     height: 30vh;
     width: 100%;
 }
-#about{
-    height: 130vh;
-    width: 100%;
-    background-color: rgb(196, 165, 125);
-}
-.About{
-    perspective: 1000px;
-}
-.About:hover img{
-    transform: rotateX(-360deg);
-    ransform: rotateY(-360deg);
-    transition: all 0.5s ease-in-out 0s;
-    /* border: 5px solid red; */
-    text-align: center;
-}
-.About img{
-    height: 70vh;
-    width: 100%;
-}
-.sabout{
-    background-color: aquamarine;
-    /* border: 5px solid red; */
-    text-align: center;
-}
-.train{
-    text-align: center;
-}
-#navbar:hover {
-    transform: rotateX(-360deg);
-    transform: rotateY(-360deg);
-    transition: all 0.8s ease-in-out 0s;
-    /* transition: all 0.8s ease-in-out 0s;  */
-}
-#footer-container:hover ul{
-    transform: rotateX(-360deg);
-    transform: rotateY(-360deg);
-    transition: all 0.5s ease-in-out 0s;
-}
-.go-to-home{
-    /* border: 2px solid #f17373 ; */
-    width: 8.7rem;
-    position: relative;
-    top: 14vh;
-    right: 51vh;
-    border-radius: .5rem;
-    background-color: rgb(109, 109, 180);
-}
 .last{
     position: relative;
     top: 25vh;
     right: 65vh;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+hr{
+    border: 1px dotted rgb(224, 177, 177);
+}
+.arr{
+    position: relative;
+    bottom: 4rem;
+}
+#web{
+    position: relative;
+    bottom: 3.5rem;
+}
 
 
 @media (max-width:280px){
