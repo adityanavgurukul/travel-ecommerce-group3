@@ -13,12 +13,12 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(188, 203, 242);
+    background: rgb(243, 250, 254);
  }
  
  .rating-box{
     position: relative;
-    background-color:rgb(167, 176, 45) ;
+    background-color:rgb(230, 222, 203) ;
     padding:25px 50px 35px;
     border-radius: 25px;
     box-shadow: 0 5px 10px  rgba(215, 210, 79, 0.05);
@@ -26,7 +26,7 @@ body
 }
 .rating-box header{
     font-size: 22px;
-    color: #84f160;
+    color: hsl(214, 64%, 2%);
     font-weight: 500;
     margin-bottom: 20px;
     text-align: center;
@@ -39,7 +39,7 @@ body
 }
 
 .stars i{
-    color: white;
+    color: rgb(40, 21, 21);
     font-size: 35px;
     cursor: pointer;
     transition: color 0.1s ease;
@@ -48,10 +48,10 @@ body
 
 .stars i.active
 {
-    color:rgb(119, 244, 10) ;
+    color:rgb(11, 202, 189) ;
     }
     
 .stars{
-    color:grey;
+    color:rgb(33, 10, 10);
 }
    

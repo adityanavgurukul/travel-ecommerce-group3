@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Star_Rating</title>
-    <link rel="stylesheet" href="ratingcss.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, 
+				initial-scale=1.0">
+	<link rel="stylesheet" href="Reviewcs.css">
+	<title>The Product Review and Rating</title>
 </head>
+
 <body>
-    <div class="rating-box">
-        <header><u><i>Rate Here..!</i></u></header>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-    </div>
-
-
-
-<script src="ratingJS.js" defer></Script>   
+	<div class="container">
+		<h1><u>How Was Your Experience ?</u></h1>
+		
+		<div class="stars" id="stars">
+			<span class="star" data-value="1">★</span>
+			<span class="star" data-value="2">★</span>
+			<span class="star" data-value="3">★</span>
+			<span class="star" data-value="4">★</span>
+			<span class="star" data-value="5">★</span>
+		</div>
+		<div class="rating">
+			<span id="rating">0</span>/5
+		</div>
+		<p>Share your review:</p>
+		<textarea id="review"
+				placeholder="Write your review here">
+		</textarea>
+		<button id="submit">Submit</button>
+		<div class="reviews" id="reviews">
+		</div>
+	</div>
+	<script src="Reviewjs.js "></script>
 </body>
+
 </html>
