@@ -7,16 +7,83 @@
 <link rel="stylesheet" type="text/css" href="login-signup.css">
 </head>
 <body>
+    <div class="boxs">
+        <form class="from-box" id="nameField" >
+            <h1 id="title">Login</h1>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" />
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" />
+                <button id="button">submit</button>
+                <div class="btn-field">
+                    <button type="button" id="signupBtn" class="disable">sing Up</button>
+                    <button type="button"id="LoginBtn">Login</button>
+                </div>
+        </form>
+
+        <script src="index.js"></script>
+    
+    </div>    
+          
+    
+</body>
+</html> 
+ 
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
     <form id="box-Form">
         <h1 id="title">Login</h1>
         <label for="email">Email:</label><br>
         <input type="email" id="email" name="email" required><br>
         <label for="password">Password:</label><br>
         <input type="password" id="password" name="password" required><br>
-        <p id="text">singup in account<a href="index.html">Sing Up</a></p>
-        <button id="button">submit</button>
+        <p id="text">Don't have an account? <a href="signup.html">Sign Up</a></p>
+        <!-- <script src="index.js"></script> -->
+    <!-- </form>
+    <script src="index.js"></script>
+</body>
+</html> 
+
+
+ --> -->
+
+
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <form id="box-Form">
+        <h1 id="title">Login</h1>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <p id="text">Don't have an account? <a href="singup.html" id="signupLink">Sign Up</a></p>
     </form>
-    </div>    
-    
+
+    <script src="index.js"></script>
+    <script>
+        // JavaScript code to handle navigation to signup.html
+        document.getElementById("signupLink").addEventListener("click", function(event) {
+            event.preventDefault(); 
+            window.location.href = "signup.html"; // Navigate to signup.html
+        });
+    </script>
 </body>
 </html>
+ -->
