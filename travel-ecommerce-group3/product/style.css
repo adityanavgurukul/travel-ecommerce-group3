@@ -11,10 +11,6 @@ nav {
     color: white;
     /* font-size:larger; */
 }
-#wish{
-    text-decoration: none;
-}
-
 #first{
     display: flex;
     justify-content: center;
