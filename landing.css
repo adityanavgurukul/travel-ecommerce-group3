@@ -248,3 +248,18 @@ hr{
         background: #222;
     }
 }
+
+#about{
+    height: 40rem;
+    width: 100%;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+
+}
+#about div{
+    text-align: center;
+    border: 2px solid red;
+}
