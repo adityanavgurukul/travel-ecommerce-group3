@@ -286,25 +286,25 @@ hr{
     font-size: .9rem;
 }
 .person7{
-    width:vh;
+    /* width:vh; */
 }
 .member{
     text-align: center;
     background-color: rgb(230, 144, 144);
 }
 .person7{
-    height: 30rem;
+    height: 10rem;
     border: 2px solid black;
     display: flex;
 }
 .priti-imag{
-    height: 29.7rem;
+    height: 155px;
     width: 100%;
 }
 .leader{
-    height: 29.9rem;
-    width: 50%;
-    border: 2px solid black;
+    height: 10rem;
+    width: 30%;
+    /* border: 2px solid black; */
 }
 .inner2{
 background-color: bisque;
@@ -313,12 +313,12 @@ width: 100%;
 .inner2 h2{
     text-align: center;
     position: relative;
-    top: 12rem;
+    top: 2rem;
 }
 .inner2 .priti{
     text-align: center;
-    margin-top: 14rem;
-    margin-left: 5rem;
+    margin-top: 3rem;
+    margin-left: 1rem;
     font-size: 1;
 
 }
